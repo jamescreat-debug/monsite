@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Shop - Vêtements & Chaussures de Marque</title>
+    <!-- Import d'une police moderne (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Styles généraux modernes */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        /* En-tête du site */
+        header {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #94a3b8;
+        }
+
+        /* Section Boutique */
+        .boutique {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .boutique h2 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            border-left: 4px solid #38bdf8;
+            padding-left: 12px;
+        }
+
+        /* Grille des produits */
+        .grille-produits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        /* Carte produit */
+        .carte-produit {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .carte-produit:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .carte-produit img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .infos-produit {
+            padding: 20px;
+        }
+        .infos-produit h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        .description {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-bottom: 16px;
+        }
+
+        .pied-carte {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .prix {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        /* Bouton de commande WhatsApp */
+        .btn-commander {
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .btn-commander:hover {
+            background-color: #20ba5a;
+        }
+
+        /* Pied de page */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #0f172a;
+            color: #94a3b8;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>James Shop</h1>
+        <p>Les meilleures tendances de vêtements et chaussures (Hommes & Femmes)</p>
+    </header>
+
+    <main class="boutique">
+        <h2>Nos Articles Vedettes</h2>
+        
+        <div class="grille-produits">
+            
+            <!-- Article 1 : Chaussure -->
+            <article class="carte-produit">
+                <img src="images/sneaker1.jpg" alt="Sneaker Tendance Homme">
+                <div class="infos-produit">
+                    <h3>Sneaker Tendance Homme</h3>
+                    <p class="description">Confortable et stylée, idéale pour un look streetwear.</p>
+                    <div class="pied-carte">
+                        <span class="prix">45 $</span>
+                        <a href="https://wa.me/243818649460?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20la%20Sneaker%20Tendance%20Homme" class="btn-commander" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 2 : Vêtement -->
+            <article class="carte-produit">
+                <img src="images/veste1.jpg" alt="Veste de Marque Femme">
+                <div class="infos-produit">
+                    <h3>Veste de Marque Femme</h3>
+                    <p class="description">Élégante et moderne pour toutes les saisons.</p>
+                    <div class="pied-carte">
+                        <span class="prix">60 $</span>
+                        <a href="https://wa.me/243818649460?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20la%20Veste%20de%20Marque%20Femme" class="btn-commander" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 3 : Accessoire / Autre -->
+            <article class="carte-produit">
+                <img src="images/ensemble1.jpg" alt="Ensemble Sportwear">
+                <div class="infos-produit">
+                    <h3>Ensemble Sportwear</h3>
+                    <p class="description">Look sportswear haut de gamme, ultra confortable.</p>
+                    <div class="pied-carte">
+                        <span class="prix">75 $</span>
+                        <a href="https://wa.me/243818649460?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20l'Ensemble%20Sportwear" class="btn-commander" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 James Shop - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
